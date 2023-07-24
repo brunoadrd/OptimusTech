@@ -22,6 +22,7 @@
 }
 
 .texto__titulo {
+    color: var(--cinza);
     padding: 0.5em;
 }
 
