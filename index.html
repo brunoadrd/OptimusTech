@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OptimusTech</title>
+
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+    
+</head>
+<body>
+    <header>
+        <section class="cabecalho">
+            <a class="cabecalho__logo" href="#">
+                <img class="img__logo" src="./img/logo.svg" alt="Logo da OptimusTech">
+                <h1 class="texto__titulo">OptimusTech</h1>
+            </a>
+
+            <div class="lista__nav">
+                <ul>
+                    <li class="lista__nav-item">
+                        <a class="lista__nav-link" href="#">Home</a>
+                    </li>
+                    <li class="lista__nav-item">
+                        <a class="lista__nav-link" href="#">Produtos</a>
+                    </li>
+                    <li class="lista__nav-item">
+                        <a class="lista__nav-link" href="#">Recursos</a>
+                    </li>
+                    <li class="lista__nav-item">
+                        <a class="lista__nav-link" href="#">Sobre nós</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="botoes__acesso">
+                <a class="botoes__acesso-entrar" href="#">Entrar</a>
+                <a class="botoes__acesso-cadastrar" href="#">Cadastrar</a>
+            </div>
+        
+            <button class="botao__menu-hamburguer" onclick="menuHamburguer()">
+                <span class="hamburguer"></span>
+            </button>
+        </section>
+
+        <div class="mobile__menu" id="navMenu">
+            <ul>
+                <li class="lista__nav-item">
+                    <a class="botoes__acesso-entrar" href="#">Entrar</a>
+                </li>
+                <li class="lista__nav-item">
+                    <a class="botoes__acesso-cadastrar" href="#">Cadastrar</a>
+                </li>
+                <li class="lista__nav-item">
+                    <a class="lista__nav-link" href="#">Home</a>
+                </li>
+                <li class="lista__nav-item">
+                    <a class="lista__nav-link" href="#">Produtos</a>
+                </li>
+                <li class="lista__nav-item">
+                    <a class="lista__nav-link" href="#">Recursos</a>
+                </li>
+                <li class="lista__nav-item">
+                    <a class="lista__nav-link" href="#">Sobre nós</a>
+                </li>
+            </ul>
+        </div>
+    </header>
+
+    <main>
+        <section class="sobre">
+            <h4 class="titulo__secao">Sobre nós</h4>
+            <h2 class="titulo__sobre">Por que somos diferentes?</h2>
+            <p class="texto__sobre">
+                Nós focamos nos detalhes de tudo que fazemos. Tudo para ajudar as empresas de todo o mundo a se 
+                concentrarem naquilo que é realmente importante para elas.
+            </p>
+
+            <ul class="infos">
+                <li class="infos__lista">
+                    <h2 class="info__sobre-quantidade">400+</h2>
+                    <h3 class="info__sobre-titulo">Projetos concluídos</h3>
+                    <p class="info__sobre-texto">Nós ajudamos a construir mais de 400 projetos incríveis.</p>
+                </li>
+                <li class="infos__lista">
+                    <h2 class="info__sobre-quantidade">100+</h2>
+                    <h3 class="info__sobre-titulo">Colaboradores</h3>
+                    <p class="info__sobre-texto">Temos mais de 100 colaboradores no nosso time que se preocupam com nossos clientes.</p>
+                </li>
+                <li class="infos__lista">
+                    <h2 class="info__sobre-quantidade">20k</h2>
+                    <h3 class="info__sobre-titulo">Downloads</h3>
+                    <p class="info__sobre-texto">Nossos projetos que estão disponíveis em lojas já foram baixados mais de 20.000 vezes.</p>
+                </li>
+                <li class="infos__lista">
+                    <h2 class="info__sobre-quantidade">500+</h2>
+                    <h3 class="info__sobre-titulo">Reviews 5 estrelas</h3>
+                    <p class="info__sobre-texto">Estamos orgulhosos de contar com mais de 500 reviews 5 estrelas em nossos produtos.</p>
+                </li>
+            </ul>
+        </section>
+        <section class="vagas">
+            <h4 class="info__vagas">Vagas abertas!</h4>
+            <h2 class="titulo__vagas">Estamos procurando por talentos</h2>
+            <h3 class="titulo__texto">Somos uma equipe 100% remota com pessoas do Brasil inteiro.</h3>
+
+            <img class="banner__vagas" src="./img/banner.svg" alt="Foto reprensentando pessoas em reunião">
+
+            <ul class="lista__design">
+                <h3 class="lista__titulo">Design</h3>
+                <li class="lista__vagas">
+                    <h3 class="lista__cargo">Product Designer</h3>
+                    <div class="container__vagas-info">
+                        <p class="lista__vagas-info">Full-time</p>
+                        <p class="lista__vagas-info">Faixa salarial: R$7.000</p>
+                    </div>
+                </li>
+                <li class="lista__vagas">
+                    <h3 class="lista__cargo">UX Designer</h3>
+                    <div class="container__vagas-info">
+                        <p class="lista__vagas-info">Full-time</p>
+                        <p class="lista__vagas-info">Faixa salarial: R$6.000</p>
+                    </div>
+                </li>
+            </ul>
+
+            <ul class="lista__dev">
+                <h3 class="lista__titulo"">Desenvolvimento de Software</h3>
+                <li class="lista__vagas">
+                    <h3 class="lista__cargo"">Desenvolvedor(a) iOS</h3>
+                    <div class="container__vagas-info">
+                        <p class="lista__vagas-info">Full-time</p>
+                        <p class="lista__vagas-info">Faixa salarial: R$8.000</p>
+                    </div>
+                </li>
+                <li class="lista__vagas">
+                    <h3 class="lista__cargo">Desenvolvedor(a) Front-end</h3>
+                    <div class="container__vagas-info">
+                        <p class="lista__vagas-info">Full-time</p>
+                        <p class="lista__vagas-info">Faixa salarial: R$7.000</p>
+                    </div>
+                </li>
+                <li class="lista__vagas">
+                    <h3 class="lista__cargo">Desenvolvedor(a) Back-end</h3>
+                    <div class="container__vagas-info">
+                        <p class="lista__vagas-info">Full-time</p>
+                        <p class="lista__vagas-info">Faixa salarial: R$8.000</p>
+                    </div>
+                </li>
+            </ul>
+        </section>
+        <section class="depoimentos">
+            <h4 class="depoimentos__descricao">Veja o que nossos colaboradores falam sobre nós</h4>
+            <h2 class="depoimentos__titulo">OptimusTech se importa com a saúde dos seus colaboradores e sempre procura nos dar todo tipo de auxílio possível.</h2>
+            <img src="./img/avatarJulia.svg" alt="Foto do perfil de Júlia Castro">
+            <p class="depoimentos__autor">Júlia Castro</p>
+            <p class="depoimentos__atividade">Desenvolvedora Web</p>
+        </section>
+    </main>
+
+    <footer class="novidades">
+        <h2 class="novidades__titulo">Acompanhe as nossas oportunidades</h2>
+        <p class="novidades__texto">Seja o primeiro a saber quando novas vagas serão abertas!</p>
+        <div>
+            <input class="caixa__email" type="email" placeholder="Seu e-mail">
+            <button class="novidades__email">Cadastrar</button>
+        </div>
+        <p class="copyright">© 2022 OptimusTech. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="./js/main.js"></script>
+</body>
+</html>

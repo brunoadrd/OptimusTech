@@ -1,0 +1,58 @@
+.sobre {
+    margin: 3em 1em;
+    text-align: center;
+}
+
+.titulo__secao {
+    color: var(--vermelho);
+    font-size: 0.8em;
+    font-weight: 600;
+    margin-bottom: 1.5em;
+}
+
+.titulo__sobre {
+    color: var(--cor-principal);
+    font-size: 2em;
+    font-weight: 600;
+    margin-bottom: 1em;
+}
+
+.texto__sobre {
+    color: var(--cinza-claro);
+}
+
+.infos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 3em 1em;
+}
+
+.infos__lista {
+    padding: 1em;
+    width: 15em;
+}
+
+.info__sobre-quantidade {
+    color: var(--vermelho);
+    font-size: 2.2em;
+    font-weight: 600;
+}
+
+.info__sobre-titulo {
+    padding: 1em;
+    font-size: 1em;
+    font-weight: 500;
+}
+
+.info__sobre-texto {
+    color: var(--cinza-claro);
+    font-weight: 400;
+}
+
+@media screen and (min-width: 700px) {
+    .titulo__sobre,
+    .texto__sobre {
+        margin: 0 8rem 2rem 8rem;
+    }
+}

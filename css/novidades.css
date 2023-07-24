@@ -1,0 +1,41 @@
+.novidades {
+    padding: 2em;
+    background: var(--bg-novidades);
+    text-align: center;
+}
+
+.novidades__titulo {
+    font-size: 2em;
+    font-weight: 600;
+    padding: 1rem;
+}
+
+.novidades__texto {
+    color: var(--cinza-claro);
+    padding: 1rem;
+}
+
+.caixa__email {
+    padding: 0.5rem;
+}
+
+.novidades__email {
+    border: none;
+    border-radius: 0.5em;
+    color: var(--branco);
+    background: var(--vermelho);
+    padding: 0.5rem;
+    margin: 1rem;
+}
+
+.copyright {
+    color: var(--cinza-claro2);
+    font-size: 0.8em;
+    padding: 1rem;
+}
+
+@media screen and (min-width: 700px) {
+    .novidades {
+        padding: 4em;
+    }
+}
